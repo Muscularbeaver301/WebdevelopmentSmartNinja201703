@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  background-color: lightyellow;
+}
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  background-color: lightgreen;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+  background-color: lightblue;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 150px;
+  background-color: white;
+  width: 100%;
+  background-color: lightgrey;
+}
+body {
+  margin-bottom: 170px;
+  background-color: grey;
+}
+img {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.text{
+  background-color: lightpink;
+}

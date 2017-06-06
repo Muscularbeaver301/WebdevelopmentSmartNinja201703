@@ -1,0 +1,121 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>
+			Meine Website Titel
+		</title>
+	</head>
+
+	<body>
+		<h1 id=""> Abschnittstitel </h1>							
+
+		<div class="static">
+		static ist der Standardwert. Ein Element mit position: static; wird auf keine besondere Art positioniert. Ein Element mit diesem Wert wird als nicht positioniert bezeichnet und ein Elemement mit jedem anderen Wert für die Position als positioniert.
+
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				.static {
+				  position: static;
+				  background-color: lightgray;
+				}
+
+		</div>
+		<br>
+		<br>
+
+
+		<div class="relative1">
+		relative verhält sich genau wie static außer es werden weitere Eigenschaften gesetzt.
+
+			<br>
+			<br>
+			Dieses div:
+			<br>
+
+				.relative1 {
+				  position: relative;
+				  background-color: lightgray;
+				}
+
+		</div>
+		<br>
+		<br>
+
+		<div class="relative2">
+		Setzt man die Eigenschaften top, right, bottom, and left eines relativ positionten Elementes passt sich dessen Position relativ zu seiner normalen Position an. Der restliche Inhalt wird nicht angepasst um die Lücke, die das Element hinterlassen hat, zu füllen.
+
+			<br>
+			<br>
+			Dieses div:
+			<br>
+
+			.relative2 {
+			  position: relative;
+			  top: -20px;
+			  left: 20px;
+			  background-color: lightgray;
+			  width: 500px;
+			}
+		</div>
+		<br>
+		<br>
+
+		<div class="fixed">
+		Hallo! Ignorier mich erst einmal.
+			<br>
+			<br>
+			Dieses div:
+			<br>
+
+
+			.fixed {
+			  position: fixed;
+			  bottom: 0;
+			  right: 0;
+			  width: 200px;
+			  background-color: lightblue;
+			}
+		</div>
+		<br>
+		<br>
+
+
+
+		<div class="relative">
+		Dieses Element ist relativ positioniert. Wäre es position: static; würde sein absolut positionieres child ausbrechen und am document body ausgerichtet.
+			<br>
+			Dieses div:
+			<br>
+			.relative {
+			  position: relative;
+			  width: 600px;
+			  height: 400px;
+			}
+		<br>
+		<br>
+			<div class="absolute">
+			Dieses Element ist absolut positioniert. Es wird relativ zum Elternelement positioniert.
+			<br>
+			Dieses div:
+			<br>
+			.absolute {
+			  position: absolute;
+			  top: 120px;
+			  right: 0;
+			  width: 300px;
+			  height: 200px;
+			}
+			</div>
+			<br>
+			<br>
+		</div>
+
+
+
+
+	</body>
+
+</html>

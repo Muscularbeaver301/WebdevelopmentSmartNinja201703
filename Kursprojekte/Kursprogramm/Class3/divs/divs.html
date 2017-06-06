@@ -1,0 +1,127 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>
+			Meine Website Titel
+		</title>
+	</head>
+
+	<body>
+		<h1 id=""> Abschnittstitel </h1>							
+
+		<div id="div1">
+			Indem man die Breite (width) eines Block-Elements definiert, verhindert man, dass es sich nach rechts und links bis zum Rand des umgebenden Containers ausbreitet. Durch Setzen des rechten und linken Außenabstands (margin) auf auto lässt sich das Element horizontal zentrieren. Das Element nimmt so die definierte Breite an und teilt den verbleibenden Außenabstand gleichmäßig auf.
+			<br>
+			Nur wenn das Browserfenster schmaler wird als unser Element breit ist, ergibt sich ein Problem. Der Browser behebt dies, indem er der Seite eine horizontale Bildlaufleiste (scrollbar) hinzufügt. Das lässt sich verbessern. 
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				#div1 {
+				  width: 600px;
+				  margin: 0 auto; 
+				  background-color: gray;
+				}
+		</div>
+		<br>
+		<br>
+
+		<div id="div2">
+			Die Situation bessert sich wenn wir anstelle von width max-width verwenden. Das ist wichtig damit unsere Seite auch auf Mobilgeräten gut nutzbar ist. Ändere die Fenstergröße dieser Seite um zu sehen, was ich meine!
+
+			Übrigens: max-width wird von von allen wichtigen Browsern unterstützt inklusive IE7+. Du kannst es daher unbeschwert einsetzen.
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				#div2 {
+				  max-width: 600px;
+				  margin: 0 auto; 
+				  background-color: gray;
+				}
+		</div>
+		<br>
+		<br>
+
+
+		<div class="div3">
+
+Wenn wir über die Breite von HTML-Elementen sprechen, müssen wir auch über die damit zusammenhängenden Probleme sprechen: Das box model. Denn wenn du die Breite eines Elements festlegst, kann es durchaus sein, dass das Element größer wird, als du wolltest, denn der Rahmen (border) und Innenabstand (padding) werden das Element über die definierte Breite hinaus vergrößern.
+
+			Ich bin schmaler …
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				.div3 {
+				  width: 500px;
+				  margin: 20px auto;
+				  background-color: green;
+				}
+		</div>
+		<br>
+		<br>
+		<div class="div4">
+			und ich größer!
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				.div4 {
+				  width: 500px;
+				  margin: 20px auto;
+				  padding: 50px;
+				  border-width: 10px;
+				  background-color: red;
+				}
+		</div>
+		<br>
+		<br>
+
+		<div class="div5">
+			Ich bin schmaler …
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				.div5 {
+				  width: 500px;
+				  margin: 20px auto;
+				  -webkit-box-sizing: border-box;
+				     -moz-box-sizing: border-box;
+				          box-sizing: border-box;
+				}
+		</div>
+		<br>
+		<br>
+		<div class="div6">
+			und ich größer!
+
+			* {
+			  -webkit-box-sizing: border-box;
+			     -moz-box-sizing: border-box;
+			          box-sizing: border-box;
+			}
+			
+			<br>
+			<br>
+			Dieses div:
+			<br>
+				.div6 {
+				  width: 500px;
+				  margin: 20px auto;
+				  padding: 50px;
+				  border: solid blue 10px;
+				  -webkit-box-sizing: border-box;
+				     -moz-box-sizing: border-box;
+				          box-sizing: border-box;
+				}
+		</div>
+		<br>
+		<br>
+
+
+	</body>
+
+</html>

@@ -1,0 +1,34 @@
+##################################################################################
+
+FOR MAC USERS:
+
+-get easyinstall with:
+curl https://bootstrap.pypa.io/ez_setup.py -o - | sudo python
+
+-get pip with:
+sudo easy_install pip
+
+-then install packages with
+sudo pip install <package_name>
+
+##################################################################################
+
+FOR LINUX USERS:
+
+-get pip:
+sudo apt-get install python-pip python-dev build-essential
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+
+-then install packages with:
+sudo pip install <package_name>
+
+(if doesnt work, follow this: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html)
+
+##################################################################################
+
+FOR WINDOWS USERS:
+
+-pip is installed with python installation.
+-install packages with
+pip install <package_name>

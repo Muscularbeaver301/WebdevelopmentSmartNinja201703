@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Hello, SmartNinja!</h1>
+    <h2>Please fill out and submit this form to post to /</h2>
+    <h3>Please guess the secret number</h3>
+
+    <form method="post" action="/">
+        <input name="some_number">
+        <button type="submit">Publish</button>
+    </form>
+
+    {% if won and number%}
+    <h2> Congratulations, you guessed right!</h2>
+    <h2> The number was: </h2>
+    {{ number }}
+    {% elif number %}
+    <h2> Sorry, your number was wrong: </h2>
+    {{ number }}
+    {% endif -%}
+
+</body>
+</html>

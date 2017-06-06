@@ -1,0 +1,40 @@
+.static {
+  position: static;
+  background-color: lightgray;
+}
+
+.relative1 {
+  position: relative;
+  background-color: lightgray;
+}
+
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: lightgray;
+  width: 500px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.relative {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: lightblue;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background-color: lightgreen;
+}

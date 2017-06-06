@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Hello, SmartNinja!</h1>
+    <h2>Please fill out and submit this form to post to /</h2>
+
+    <form method="post" action="/">
+        <input name="some_text">
+        <button type="submit">Publish</button>
+    </form>
+
+    <h2> Your input was </h2>
+
+    {{ user_input }}
+
+    <form method="post" action="/">
+        <input name="some_text2">
+        <button type="submit">Publish</button>
+    </form>
+
+    <h2> Your input was </h2>
+
+    {{ user_input2 }}
+
+
+
+
+</body>
+</html>
