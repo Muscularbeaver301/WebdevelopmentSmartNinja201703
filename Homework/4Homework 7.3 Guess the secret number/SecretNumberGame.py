@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -10,7 +9,7 @@ secret = int(10 * random.random()) + 1
 oldsecret = secret
 guess = 0
 #Nachfolgend die Bedingung für die whileschleife(Haben wir falsch geraten?)
-"""
+
 while guess != secret:
     guess = int(raw_input("Errate die Geheimzahl bis 10:"))
     if guess == secret:
@@ -22,7 +21,7 @@ while guess != secret:
         print("Secret = "+str(secret))
     else:
         print "Leider nicht, sehr ärgerlich! versuche es erneut! " + str(guess)+(" ist falsch")
-"""
+
 #zweite Möglichkeit:
 """
 def getSecret():
@@ -40,7 +39,7 @@ while guess != secret:
 """
 
 #dritte mit mehr funktionen
-
+"""
 def getSecret():
     return int(10 * random.random()) + 1
 
@@ -61,4 +60,4 @@ def pruefung():
     else:
         print "Leider nicht, sehr ärgerlich! versuche es erneut! " + str(guess) + (" ist falsch")
 
-while istFalsch(): pruefung()
+while istFalsch(): pruefung()"""
