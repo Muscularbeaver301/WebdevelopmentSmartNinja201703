@@ -23,7 +23,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">M'N'M Barbarenshop</a>
+               <a class="navbar-brand" href="#contact">M'N'M Barbarenshop</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -31,9 +31,10 @@
                   <li><a href="#ID1-Services">Our Services</a></li>
                   <!-- more complicated version: <li class="active"><a href="#">Our Services<span class="sr-only">(current)</span></a></li>-->
                   <li><a href="#ID2-Appointments">Appointments</a></li>
-                  <li><a href="#ID3-Crypto-prices" data-toggle="modal" data-target="#Crypto-prices">Crypto prices</a></li>
+                  <li><a href="#ID3-FAQ's">FAQ's</a></li>
+                  <li><a href="#ID4-Crypto-prices" data-toggle="modal" data-target="#Crypto-prices">Crypto prices</a></li>
                   <li class="dropdown">
-                  <li><a href="#ID4-NikolajVideo" data-toggle="modal" data-target="#NikolajVideo">Idris video</a></li>
+                  <li><a href="#ID5-NikolajVideo" data-toggle="modal" data-target="#NikolajVideo">Idris video</a></li>
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
                      <ul class="dropdown-menu">
@@ -111,8 +112,7 @@
           <div class="page-header text-center margin-0 border-0"id="ID1-Services">
           <h1>Our Services</h1>
           </div>
-      <div class="container"  "row padding-30">
-
+      <div class="row padding-30">
          {% if myboolean %}
          <p align="center">You shall be happy.</p>
          {% else %}
@@ -124,7 +124,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title text-left">
-              Wir schneiden Glatzen
+              Wir skalpieren!
               <span class="glyphicon glyphicon-pawn pull-right" aria-hidden="true"></span>
             </h3>
           </div>
@@ -137,7 +137,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title text-left">
-              Krasse Emofrisuren vom Meister
+              Krasse Emofrisuren vom Meister!
               <span class="glyphicon glyphicon-education pull-right" aria-hidden="true"></span>
             </h3>
           </div>
@@ -164,7 +164,6 @@
           <div class="page-header text-center padding-0 margin-0 border-0" id="ID2-Appointments">
         <h1>Have a date with us!</h1>
           </div>
-      <div class="container"  "row padding-30">
       <div class="container">
          <div class="row padding-0">
             <div class="col-md-6">
@@ -279,8 +278,8 @@
       </div>
 
       <!-- Panels -->
-
-          <div class="page-header text-center padding-10 margin-0 border-0" id="questions">
+         <div class= "container">
+          <div class="page-header text-center padding-10 margin-0 border-0" id="ID3-FAQ's">
             <h1>Frequently Asked Questions</h1>
          </div>
       <div class= "questionpanels">
@@ -328,12 +327,33 @@
             </div>
          </div>
       </div>
+         </div>
       <!-- END Panels -->
-
-      <!--LAST LINK-->
+      <!--Impressum/Links-->
+       <div class="container">
+      <div class="col-md-4 padding-60 text-center" id="contact"><h4>Contact</h4>
+        <p>M'N'M | Barbarenshop<br>
+        South Atlantic Ocean 18°05'11"S 23°21'36"W<br>
+        Phone(satelite): (+45998)1125547555<br>
+        e-mail: barbaric@yuhuu.com</p>
+      </div>
+     <div class="col-md-4 padding-60 text-center">
+        <a href="#carousel-example-generic"><img src="assets/pictures/Barbarian.jpg" class="rounded-circle" alt="Logo" height="120" width="120"></a>
+     </div>
+  <div class="Navigator">
+    <div class="col-md-4 padding-60 text-center"><h4>Navigation</h4>
+        <p><a href="#ID1-Services">Our Services</a><br>
+        <a href="#ID2-Appointments">Appointments</a><br>
+        <a href="#ID3-FAQ's">FAQ's</a><br>
+        </p>
+    </div>
+  </div>
+   </div>
+      <!--End Impressum/Links-->
+          <!--LAST LINK-->
       <div align="center" class="container"
-      <p><font face="Impact">{{nickname}}! Du willst unser Geheimnis wissen?</font></p>
-      <p><font face="Impact"><a href="/coffee">Dann folge diesen Link.</a></font></p>
+      <p>{{nickname}}! Wanna know our Secret ?</p>
+      <p><a href="/coffee">Then follow this Link...</a></p>
       </div>
       <!--END LAST LINK-->
 
@@ -347,7 +367,7 @@
                      <h4 class="modal-title" id="myModalLabel">Play risk!</h4>
                   </div>
                   <div class="modal-body">
-                     <p><font size="5" face="Impact">Check out the latest crypto currency prices...</font></p>
+                     <p><font size="5">Check out the latest crypto currency prices...</font></p>
                      <br>
                      <br>
                      <div class="padding-30">
@@ -380,7 +400,7 @@
       </div>
    </div>
       <!-- Modal-Window -->
-      <div class="container-fluid">
+      <div class="video-container">
          <div class="modal fade" id="NikolajVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                <div class="modal-content">
